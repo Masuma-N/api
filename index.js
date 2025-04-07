@@ -21,6 +21,8 @@ app.get('/', (req, res) => {
 // actual API route
 app.get('/users', db.getUsers);
 app.post('/users', db.createUser);
+app.get('/users/:id', db.getUserById);
+
 
  
 
