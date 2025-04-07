@@ -22,6 +22,9 @@ app.get('/', (req, res) => {
 app.get('/users', db.getUsers);
 app.post('/users', db.createUser);
 app.get('/users/:id', db.getUserById);
+app.put('/users/:id', db.updateUser);
+
+
 
 
  
